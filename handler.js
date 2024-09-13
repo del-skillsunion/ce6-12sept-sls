@@ -1,10 +1,3 @@
-
-
-
-// connection to database
-// username: asdasd and password: asdasdasd
-
-
 module.exports.handler = async (event) => {
   return {
     statusCode: 200,
