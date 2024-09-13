@@ -11,6 +11,8 @@ functions:
     handler: handler.handler
     environment:
       CLASS_NAME: "CE 6"
+      EMAIL_ADDRESS: 
+        Ref: DelfrinandoEmailSns
     events:
       - httpApi:
           path: /

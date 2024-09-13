@@ -9,7 +9,7 @@ module.exports.handler = async (event) => {
     const params = {
       Message: eventText,
       Subject: "Test SNS From Lambda",
-      TopicArn: "arn:aws:sns:ap-southeast-1:255945442255:delfrinando-email-topic"
+      TopicArn: process.env.EMAIL_ADDRESS
     };
 
     // Publish the message
